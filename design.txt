@@ -1,0 +1,23 @@
+Title: AnkiGrab
+Description: An app that builds an ankiweb note for you, save it in a csv and automatically import in on your local anki (using AnkiConnect).
+It also integrates with MS Todo list to instantly jot down words you don't know everytime you encounter them, feed it in ankitool and build the deck
+for that day. Fields for a note is generated through Jisho API.
+
+Objects:
+    Vocab:
+    word
+    reading
+    meaning
+    sample_sentences
+    fetch_fields()
+    
+    CSVGen:
+    filepath
+    gen_csv()
+    import_to_anki()
+
+    MSTodo:
+    user
+    pass
+    fetch_anki_list()
+    add_list_to_csv()
