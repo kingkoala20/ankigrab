@@ -131,7 +131,12 @@ class CSVGen:
         
         
 if __name__ == "__main__":
-    fetcher = MSTodo()
+    """fetcher = MSTodo()
     fetcher.fetch_anki_list()
     mycsv = CSVGen()
-    mycsv.import_mstodo(fetcher)
+    mycsv.import_mstodo(fetcher)"""
+    
+    mycsv = CSVGen()
+    print(mycsv.deckname)
+    mycsv.deckname = "test"
+    print(mycsv.deckname)
