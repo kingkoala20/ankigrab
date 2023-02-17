@@ -15,6 +15,11 @@ myword = Vocab(word) #initialize vocab object that scrapes meaning, reading and 
 mycsv.add_word(myword) #writes the fetched data on the csv
 mycsv.import_to_anki() #imports the csv file into anki. Note: Make sure that ankiconnect plugin is installed and the local anki software is open.
 
+#-- Beta Function MSTODO --
+todo = MSTodo()
+todo.fetch_anki_list()
+mycsv.import_mstodo(todo)
+
 ```
 
 ## Preliminary Steps
