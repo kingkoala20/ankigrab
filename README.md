@@ -30,6 +30,10 @@ mycsv.import_mstodo(todo)
 ## Contributions
 If you are interested in this project, please let me know! Let's make learning japanese much easier for everyone!
 
+## Future Plan
+- Build Desktop GUI
+- Build WebApp
+
 ## 日本語
 こちらのモジュールはANKIという復習ソフトの補助アプリケーションです。要点は語句の意味、読み方と例文を自動的に収集してそのデータをCSVに記録し、直接にANKIにインポートすることが出来るアプリケーションです。更に
 MICROSOFTのTODOサービスにも連携も可能で語句が聞き取りや読み取り時点でスマホで安易に記録することが出来ます。外国人として復習に対して非常に役立てるものだと思われます。
