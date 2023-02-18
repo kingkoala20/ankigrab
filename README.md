@@ -11,8 +11,8 @@
 ```python
 
 mycsv = CSVGen() #initialize csv generator object
-myword = Vocab(word) #initialize vocab object that scrapes meaning, reading and sample sentences
-mycsv.add_word("私") #writes the fetched data on the csv
+myword = Vocab("私") #initialize vocab object that scrapes meaning, reading and sample sentences
+mycsv.add_word(myword) #writes the fetched data on the csv
 mycsv.import_to_anki() #imports the csv file into anki. Note: Make sure that ankiconnect plugin is installed and the local anki software is open.
 
 #-- Beta Function MSTODO --
