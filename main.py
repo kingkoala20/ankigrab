@@ -101,6 +101,9 @@ class CSVGen:
         
         # -- Create a new csv file upon instantiation (if it doesn't already exist)
         
+        if not os.path.exists("./csvs/"): # create "csvs" dir if it doesn't exist
+            os.mkdir("./csvs/")
+            
         if os.path.isfile(self.filepath) == False:
             with open(self.filepath, "w", encoding='utf-8', newline='') as f:
                 csv_write = csv.writer(f, delimiter=';')
