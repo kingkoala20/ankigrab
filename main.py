@@ -128,15 +128,11 @@ class CSVGen:
             vocab = Vocab(word)
             self.add_word(vocab)                
         
-        
+def main():
+    mycsv = CSVGen() #initialize csv generator object
+    myword = Vocab("私") #initialize vocab object that scrapes meaning, reading and sample sentences
+    mycsv.add_word(myword) #writes the fetched data on the csv
+    mycsv.import_to_anki() #imports the csv file into anki. Note: Make sure that ankiconnect plugin is installed and the local anki software is open.
         
 if __name__ == "__main__":
-    """fetcher = MSTodo()
-    fetcher.fetch_anki_list()
-    mycsv = CSVGen()
-    mycsv.import_mstodo(fetcher)"""
-    
-    mycsv = CSVGen()
-    print(mycsv.deckname)
-    mycsv.deckname = "test"
-    print(mycsv.deckname)
+    main()
